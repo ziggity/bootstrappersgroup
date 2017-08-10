@@ -1,0 +1,19 @@
+<% if @accounts.any? %>
+        <% @accounts.each do |account| %>
+        <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 20rem;">
+      <div class="card-block card-outline-primary mb-3 text-center">
+      <h4 class="card-title"><%= account.first_name %></h4>
+      <p class="card-text"><%= account.last_name %></p>
+      </div>
+
+      </div>
+
+      </div>
+
+      <% end %>
+      <% else %>
+      <h3>No Business descriptions added yet.</h3>
+      <% end %>
+
+      <%= link_to 'Admin', rails_admin_path %>
