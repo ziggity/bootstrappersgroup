@@ -2,6 +2,10 @@
 //$ NPM install node-fetch
 
 // yield works just as you would assume, it yields, and passes it on to the next function.
+// Generators let you treat synchronous code like asych code with yields as seen below
+//promises are fine too. 
+// Generators are a bit more clever it seems. 
+//
 
 const fetch = require('node-fetch')
 
